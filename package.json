@@ -1,0 +1,27 @@
+{
+  "name": "ofam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/ofam.js",
+  "bin": "src/ofam.js",
+  "type": "module",
+  "scripts": {
+    "build": "pkg .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "scripts": "src/ofam.js",
+    "assets": "json/*",
+    "targets": [
+      "host"
+    ],
+    "outputPath": "dist/js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "typescript": "^4.8.2"
+  }
+}
